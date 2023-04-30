@@ -5,7 +5,7 @@ import Formulario from './componentes/Formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 
 function App() {
-  const [mostrarFormulario, actualizarMostrar] = useState (true)
+  const [mostrarFormulario, actualizarMostrar] = useState (false)
 
   const cambiarMostrar = () =>{
     actualizarMostrar(!mostrarFormulario)
