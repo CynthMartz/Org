@@ -1,19 +1,15 @@
 import "./ListaOpciones.css"
 
 const ListaOpciones = (props) => {
-    //metodo map -> 
-    const equipos = [
-        "Programación",
-        "Front-end",
-        "Data Science",
-        "Devops",
-        "UX y Diseño",
-        "Móvil",
-        "Innovación y Gestión"
-    ]
 
-    const manejarCambio=(evento) => {
-        props.actualizarEquipo(evento.target.value)
+    //Metodo map -> arreglo.map( (equipo, index) => { 
+    //    return <option></option>
+    // })
+
+
+    const manejarCambio = (e) => {
+        console.log("cambio", e.target.value)
+        props.actualizarEquipo(e.target.value)
     }
 
     return <div className="lista-opciones">
@@ -24,6 +20,7 @@ const ListaOpciones = (props) => {
         </select>
     </div>
 }
+
 export default ListaOpciones
 
 // otra forma de menos codigo linea 19,20
